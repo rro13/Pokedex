@@ -1,11 +1,10 @@
-#pokedex-description {
+.pokedex-description {
     text-align: justify;
     hyphens: auto;
 }
 
 #pokedex {
     background-color: rgb(241, 87, 87);
-    /* min-height: 400px; */
 }
 
 #poke-img {
@@ -14,15 +13,10 @@
 
 .text-box {
     background-color: #fff;
-    /* width: 15rem; */
 }
 
 #pokemon-picture {
     background-color: #ccc;
-    /* min-height: 50px; */
-    /* width: 100%; */
-    /* width: 30%;
-    min-height: 30%; */
 }
 
 
