@@ -3,7 +3,6 @@ const getPokemon = async(preFix, pokemon) => {
     if(APIResponse.status === 200) {
         const selectedPokemon = await APIResponse.json();
         return selectedPokemon
-
     }
 }
 
@@ -30,7 +29,7 @@ const renderInfos = (id, name, weight, description, type) => {
     const notFoundMsg = document.getElementById('not-found-return');
 
     if(id === undefined) {
-        elementPokeImg.src = "/images/not-found.png"
+        elementPokeImg.src = "not_found.png"
         elementPokeId.textContent = '-';
         elementPokeName.textContent = '-';
         elementWeight.textContent = '-';

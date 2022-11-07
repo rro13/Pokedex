@@ -11,37 +11,24 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="/index.html">
-              <img src="/images/dex-icon.jpg" width="30" alt="">
-          </a>
-          <a class="navbar-brand" href="/index.html">Pokédex</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <form class="d-flex" id="form" role="search">
-                            <input class="form-control me-2" id="search-bar" type="search" placeholder="Pokémon name or number" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                          </form>            
-                      </ul>
-              </div>
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <div class="logo-name">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="dex_icon.jpg" width="30" alt="">
+                </a>
+                  <a class="navbar-brand">Pokédex</a>
+            </div>
+          <form class="d-flex pt-3 pt-sm-0" id="form" role="search">
+            <input class="form-control me-2" id="search-bar" type="search" placeholder="Pokémon name or number" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>    
         </div>
       </nav>
   </header>
 
     <main>
-        <div class="container px-4 py-5">
+      <div class="container px-4 py-5">
             <div class="row">
                 <div class="dex-description col-12">
                   <p class="pokedex-description">Olá, meu nome é Ramon Oliveira.</p>
@@ -51,11 +38,11 @@
                   <div class="row flex-md-row-reverse d-flex justify-content-around align-items-center g-4" id="pokemon-description">
                       <div class="col-12 col-md-5 d-flex justify-content-center rounded" id="pokemon-picture">
                           <div class="d-flex justify-content-center" id="not-found-return">
-                              <img class="d-block mx-lg-auto" src="" href="aaa" id="poke-img" alt="">
+                              <img class="d-block mx-lg-auto" src="" href="" id="poke-img" alt="">
                           </div>
                       </div>
                       <div class="d-flex justify-content-around col-md-5 rounded" id="text-description">
-                          <p class="p-3" id="poke-description"></p>
+                          <p class="p-3 m-0" id="poke-description"></p>
                       </div>
 
                   </div>
