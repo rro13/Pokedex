@@ -108,4 +108,4 @@ const searchPokemon = (event) => {
     }
 }
 
-form.addEventListener("submit", searchPokemon)
+form.addEventListener("submit", searchPokemon);

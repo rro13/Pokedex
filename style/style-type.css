@@ -1,0 +1,13 @@
+.card-img-top {
+    background-color: #ccc;
+}
+
+.card-body {
+    background-color: rgb(241, 87, 87);
+    font-size: 0.8rem;
+
+}
+
+.text-box {
+    background-color: #fff;
+}
