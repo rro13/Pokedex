@@ -9,10 +9,10 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style-type.css"/>
+    <link rel="stylesheet" href="style/style-type.css" />
 </head>
 
-<body>
+<body onload="showPokemonForType()">
     <header>
         <nav class="navbar bg-light">
             <div class="container">
@@ -21,6 +21,29 @@
                         <img src="dex_icon.jpg" width="30" alt="">
                     </a>
                     <a class="navbar-brand">Pokédex</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Pokemon Types
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=1'>Normal</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=2'>Fighting</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=3'>Flying</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=4'>Poison</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=5'>Ground</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=6'>Rock</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=7'>Bug</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=8'>Ghost</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=10'>Fire</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=11'>Water</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=12'>Grass</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=13'>Eletric</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=14'>Psychic</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=15'>Ice</a></li>
+                        <li><a class="dropdown-item" href='pokemon-type.html?type=16'>Dragon</a></li>
+                    </ul>
                 </div>
                 <form class="d-flex pt-3 pt-sm-0" id="form" role="search">
                     <input class="form-control me-2" id="search-bar" type="search" placeholder="Pokémon name or number"
@@ -36,7 +59,7 @@
             <div class="row justify-content-center" id="pokemonsCards">
 
             </div>
-            
+
         </div>
     </main>
 
@@ -45,7 +68,7 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <!-- <script src="app/app.js"></script> -->
-    <script src="app/pokemon-type.js"></script>
+    <script src="javascript/pokemon-type.js"></script>
 </body>
 
 </html>

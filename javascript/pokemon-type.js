@@ -2,9 +2,17 @@ const getPokemonForType = async(typeId) => {
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/type/${typeId}/`);
     if(APIResponse.status === 200) {
         const selectedTypePokemons = await APIResponse.json();
+        document.title = `Pokédex | ${capitalizeWords(selectedTypePokemons.name)}`
         return selectedTypePokemons.pokemon
     }
 }
+
+const showPokemonForType = () => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    checkPokemonSeason1(params.type)
+}
+
 const checkPokemonSeason1 = async(typeId) => {
     const pokemons = await getPokemonForType(typeId);
     pokemons.forEach(function(elemento) {
@@ -77,5 +85,3 @@ const pokemonInfos = async(pokemon) => {
 
         renderInfos(pokeId, pokeName, pokeWeight, pokeType);
 }
-
-checkPokemonSeason1(14)

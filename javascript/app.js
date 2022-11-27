@@ -52,7 +52,7 @@ const renderInfos = (id, name, weight, description, type) => {
 let pokeId = "";
 const pokemonInfos = async(pokemon) => {
     const elementDescription = document.getElementById('poke-description');
-    elementDescription.textContent = "Procurando..."
+    elementDescription.textContent = "Loading..."
 
     const pokeBasicInfos = await getPokemon('', pokemon);
     const pokeText = await getPokemon('-species', pokemon);
