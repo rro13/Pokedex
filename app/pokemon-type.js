@@ -33,7 +33,7 @@ const renderInfos = (id, name, weight, type) => {
     const pokemonsCards = document.getElementById('pokemonsCards');
     const card = `
     <div class="col-10 col-sm-6 col-lg-4 p-1">
-    <div class="card" style="">
+    <div class="card">
         <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png" class="card-img-top" alt="${name}">
         <div class="card-body">
             <div class="container d-flex justify-content-around pb-3 pt-3">
@@ -62,7 +62,6 @@ const renderInfos = (id, name, weight, type) => {
 const pokemonInfos = async(pokemon) => {
     const pokeBasicInfos = await getPokemon('', pokemon);
 
-    if(pokeBasicInfos){
         const pokeId = String(pokeBasicInfos.id).padStart(3, '0');
         const pokeName = capitalizeWords(pokeBasicInfos.name);
         const pokeWeight = (pokeBasicInfos.weight)/10 + " kg";
@@ -77,10 +76,6 @@ const pokemonInfos = async(pokemon) => {
         }
 
         renderInfos(pokeId, pokeName, pokeWeight, pokeType);
-    }else {
-        renderInfos()
-    }
-    
 }
 
-checkPokemonSeason1(7)
+checkPokemonSeason1(14)
